@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+}
+
+h1, h2, h3 {
+  line-height: 1;
+  margin: 0;
+  font-family: 'Radley', serif;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h2.contact-heading {
+  font-size: 100px;
+}
+
+h3 {
+  color: #FF4907;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+p {
+  text-transform: none;
+  font-weight: 200;
+  line-height: 160%;
+}
+
+a, a:hover {
+  color: #FF4907;
+  text-decoration-line: underline;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  font-size: 12px;
+  color: black;
+  margin: 25px 12.5px 25px 12.5px;
+  display: inline-block;
+}
+
+nav li a {
+  color: #000;
+  text-decoration-line: none;
+}
+
+header h1 {
+  font-size: 200px;
+  color: white;
+  letter-spacing: 1px;
+  animation-name: changeLogo;
+  animation-duration: 3s;
+}
+
+@keyframes changeLogo
+{
+  0% {transform: scale(0.8);}
+  100% {transform: scale(1);}
+}
+
+header .tagline {
+  color: white;
+  text-transform: lowercase;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+header {
+  height: 80vh;
+  background-image: url('../img/banner.jpg');
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-attachment: fixed
+}
+.text-img
+{
+  max-width: 105%;
+  padding-right: 30px;
+}
+
+img {
+  max-width: 90%;
+}
+
+ul {
+  padding: 0;
+}
+
+span.highlighted {
+  background: #FF4907;
+  color: white;
+  padding: 0 5px;
+}
+
+footer {
+  background: #F2F2F2;
+  min-height: 100px;
+  padding: 30px;
+  text-align: center;
+}
+
+nav
+{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.icon
+{
+  width: 45px;
+  position: fixed;
+  left: 0;
+  top:300px;
+}
+
+header
+{
+  position: relative;
+}
+
+.txt
+{
+  position: absolute;
+  text-align: center;
+  bottom: 15px;
+  left: 15px;
+  color: #fff;
+  font-size: 10px;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+
+#photo
+{
+  position: relative;
+}
+
+#photo::after
+{
+  content: url(../img/cross.svg);
+  position: absolute;
+  width: 200px;
+  z-index: -1;
+  top: -40px;
+  left: -90px;
+}
+
+#decorated
+{
+  position: relative;
+  text-align: center;
+}
+
+#decorated::after
+{
+  position: relative;
+  z-index: -1;
+  content: url(../img/line.svg);
+  width: 400px;
+  top: -150px;
+}
+
+#aboutme p 
+{
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+#aboutme h2
+{
+  margin-bottom: 30px;
+}
+
+#aboutme
+{
+  margin-bottom: 70px;
+}
+
+.list li
+{
+  list-style-type: none;
+  border-bottom: 2px solid rgb(222, 204, 204);
+  padding: 10px;
+  font-family: 'Radley', serif;
+}
+
+#projects h2
+{
+  margin-bottom: 30px;
+}
+
+#projects a
+{
+  text-decoration-line: none;
+}
+
+#insta h2
+{
+  margin: 30px;
+}
+
+#insta .col-md-3
+{
+  padding: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+#contact
+{
+  margin: 70px;
+}
+
+#contact h2{
+  margin-bottom: 50px;
+}
+
+a
+{
+  transition: all 0.8s ease-in-out;
+}
+
+a:hover
+{
+  background: #E75D24;
+  color: #fff;
+}
